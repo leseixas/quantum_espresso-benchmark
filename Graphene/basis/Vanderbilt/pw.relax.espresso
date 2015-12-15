@@ -1,0 +1,51 @@
+&CONTROL
+                   calculation    =    'relax'
+                        prefix    =    'pwscf'
+                         title    =    'Graphene'
+                  restart_mode    =    'from_scratch'
+                    pseudo_dir    =    '../../../../../pseudos/'
+                     verbosity    =    'high'
+                    wf_collect    =    .true.
+                 etot_conv_thr    =    1.0D-4
+                 forc_conv_thr    =    3.889D-4
+/
+
+&SYSTEM
+                         ibrav    =    0
+                           nat    =    2
+                          ntyp    =    1
+                          nbnd    =    20
+                       ecutwfc    =    VAR_WFC
+                       ecutrho    =    VAR_RHO
+                         nspin    =    1
+                   occupations    =    'smearing'
+                      smearing    =    'fermi-dirac'
+                       degauss    =    1.D-3
+/
+
+&ELECTRONS
+                      conv_thr    =    1.D-8
+              electron_maxstep    =    300
+               diagonalization    =    'david'
+              diago_david_ndim    =    4
+                diago_thr_init    =    1.D-3
+/
+
+&IONS
+                  ion_dynamics    =    'bfgs'
+/
+
+ATOMIC_SPECIES
+  C   12.011    C.pbe-van_bm.UPF
+
+CELL_PARAMETERS (angstrom)
+   2.1390827473 -1.235000000   0.000000000
+   2.1390827473  1.235000000   0.000000000
+   0.000000000   0.000000000  20.000000000
+
+ATOMIC_POSITIONS (crystal)
+C        0.000000000   0.000000000   0.500000000
+C        0.333333333   0.333333333   0.500000000
+
+K_POINTS automatic
+  10  10  1   0  0  0
