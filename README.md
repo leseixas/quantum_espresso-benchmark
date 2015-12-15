@@ -1,6 +1,10 @@
 # Benchmark for Quantum ESPRESSO simulations
 
-## Benchmark criteria
+## What is benchmark?
+
+## Benchmark strategies
+
+## Strength criteria
 
 ### Weak criteria
 
@@ -12,7 +16,9 @@
 * Energies differences: 1 meV/atom
 * Residual forces: 10 meV/angstrom
 
-## Silicon
+## Examples
+
+### Silicon
 
 1. Energy cutoff for planewave basis
     1. Troullier-Martins (TM) pseudopotentials
@@ -23,8 +29,10 @@
 2. K-points in Brilloiun zone with Monkhorst-Pack sampling algorithm
 3. Lattice constant optimization
 
-## Copper
+### Diamond
 
-## Graphene
+### Copper
 
-## MoS<sub>2</sub>
+### Graphene
+
+### MoS<sub>2</sub>
