@@ -3,7 +3,7 @@
                         prefix    =    'pwscf'
                          title    =    'Graphene'
                   restart_mode    =    'from_scratch'
-                    pseudo_dir    =    '../../../pseudos/'
+                    pseudo_dir    =    '../../../../../pseudos/'
                      verbosity    =    'high'
                     wf_collect    =    .true.
                  etot_conv_thr    =    1.0D-4
