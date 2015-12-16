@@ -3,7 +3,7 @@
                         prefix    =    'pwscf'
                          title    =    'Graphene'
                   restart_mode    =    'from_scratch'
-                    pseudo_dir    =    '../../../../../pseudos/'
+                    pseudo_dir    =    '../../../../pseudos/'
                      verbosity    =    'high'
                     wf_collect    =    .false.
                        disk_io    =    'none'
@@ -17,7 +17,6 @@
                           ntyp    =    1
                           nbnd    =    20
                        ecutwfc    =    VAR_WFC
-                       ecutrho    =    VAR_RHO
                          nspin    =    1
                    occupations    =    'smearing'
                       smearing    =    'fermi-dirac'

@@ -6,14 +6,7 @@
 
 ## Strength criteria
 
-### Weak criteria
-
 * Energies differences: 10 meV/atom
-* Residual forces: 10 meV/angstrom
-
-### Strong criteria
-
-* Energies differences: 1 meV/atom
 * Residual forces: 10 meV/angstrom
 
 ## Examples
