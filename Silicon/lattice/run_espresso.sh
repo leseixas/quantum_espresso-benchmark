@@ -1,8 +1,8 @@
 #!/bin/bash
 
-for k in $(seq 2 2 20)
+for a in $(seq 5.300 0.005 5.600)
   do
-  cd k_$k
+  cd a_$a
   mpiexec pw.x -npool 2 -inp pw.relax.espresso > pw.relax.out
   cd ..
 done
