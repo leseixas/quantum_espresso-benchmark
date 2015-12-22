@@ -1,9 +1,9 @@
 &CONTROL
                    calculation    =    'relax'
                         prefix    =    'pwscf'
-                         title    =    'Copper'
+                         title    =    'Graphene'
                   restart_mode    =    'from_scratch'
-                    pseudo_dir    =    '../../../../../pseudos/'
+                    pseudo_dir    =    '../../../../pseudos/'
                      verbosity    =    'high'
                     wf_collect    =    .true.
                        disk_io    =    'none'
@@ -13,14 +13,14 @@
 
 &SYSTEM
                          ibrav    =    0
-                           nat    =    1
-                          ntyp    =    1
-                          nbnd    =    22
-                       ecutwfc    =    116.0
+                           nat    =    3
+                          ntyp    =    2
+                          nbnd    =    20
+                       ecutwfc    =    VAR_WFC
                          nspin    =    1
                    occupations    =    'smearing'
-                      smearing    =    'marzari-vanderbilt'
-                       degauss    =    VAR_T
+                      smearing    =    'fermi-dirac'
+                       degauss    =    1.D-3
 /
 
 &ELECTRONS
@@ -36,15 +36,18 @@
 /
 
 ATOMIC_SPECIES
-  Cu  63.546    Cu.pbe-mt_fhi.UPF
+  Mo  95.94     Mo.pbe-mt_fhi.UPF
+   S  32.065    S.pbe-mt_fhi.UPF
 
 CELL_PARAMETERS (angstrom)
-   0.000000000  1.805000000   1.805000000
-   1.805000000  0.000000000   1.805000000
-   1.805000000  1.805000000   0.000000000
+   2.7019992598  -1.560000000   0.000000000
+   2.7019992598   1.560000000   0.000000000
+   0.0000000000   0.000000000  20.000000000
 
 ATOMIC_POSITIONS (crystal)
-Cu       0.000000000   0.000000000   0.000000000
+Mo       0.000000000   0.000000000   0.500000000
+S        0.333333333   0.333333333   0.420112153
+S        0.333333333   0.333333333   0.579887847
 
 K_POINTS automatic
-  VAR_K  VAR_K  VAR_K   0  0  0
+  10 10 1   0  0  0

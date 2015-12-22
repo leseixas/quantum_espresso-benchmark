@@ -1,8 +1,8 @@
 #!/bin/bash
 
-for temp in 1.0 0.3 0.1 0.03 0.01 0.003 0.001
+for T in $(seq 0.005 0.005 0.1)
 do
-  cd temp_$temp
+  cd T_$T
   for k in $(seq 2 2 20)
   do
     cd k_$k
