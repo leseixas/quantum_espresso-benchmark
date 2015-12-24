@@ -16,7 +16,7 @@
                            nat    =    2
                           ntyp    =    1
                           nbnd    =    20
-                       ecutwfc    =    45.0
+                       ecutwfc    =    40.0
                          nspin    =    1
                    occupations    =    'smearing'
                       smearing    =    'fermi-dirac'
@@ -36,7 +36,7 @@
 /
 
 ATOMIC_SPECIES
-  C   12.011    C.pbe-n-kjpaw_psl.0.1.UPF
+  C   12.011    C.pbe-n-rrkjus_psl.0.1.UPF
 
 CELL_PARAMETERS (angstrom)
    0.000000000  VAR   VAR
