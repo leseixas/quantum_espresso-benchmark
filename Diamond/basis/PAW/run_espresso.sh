@@ -1,6 +1,6 @@
 #!/bin/bash
 
-for wfc in $(seq 190 5 200)
+for wfc in $(seq 20 5 200)
   do
   cd wfc_$wfc
   mpiexec pw.x -npool 2 -inp pw.relax.espresso > pw.relax.out

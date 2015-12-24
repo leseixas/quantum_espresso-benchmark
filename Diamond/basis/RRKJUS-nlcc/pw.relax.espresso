@@ -1,7 +1,7 @@
 &CONTROL
                    calculation    =    'relax'
                         prefix    =    'pwscf'
-                         title    =    'Graphene'
+                         title    =    'Diamond'
                   restart_mode    =    'from_scratch'
                     pseudo_dir    =    '../../../../pseudos/'
                      verbosity    =    'high'
@@ -13,9 +13,9 @@
 
 &SYSTEM
                          ibrav    =    0
-                           nat    =    3
-                          ntyp    =    2
-                          nbnd    =    20
+                           nat    =    2
+                          ntyp    =    1
+                          nbnd    =    16
                        ecutwfc    =    VAR_WFC
                          nspin    =    1
                    occupations    =    'smearing'
@@ -36,18 +36,16 @@
 /
 
 ATOMIC_SPECIES
-  Mo  95.94     Mo.pbe-spn-rrkjus_psl.0.2.UPF
-   S  32.065    S.pbe-n-rrkjus_psl.0.1.UPF
+  C   12.011    C.pbe-n-rrkjus_psl.0.1.UPF
 
 CELL_PARAMETERS (angstrom)
-   2.7019992598  -1.560000000   0.000000000
-   2.7019992598   1.560000000   0.000000000
-   0.0000000000   0.000000000  20.000000000
+   0.000000000  1.785000000   1.785000000
+   1.785000000  0.000000000   1.785000000
+   1.785000000  1.785000000   0.000000000
 
 ATOMIC_POSITIONS (crystal)
-Mo       0.000000000   0.000000000   0.500000000
-S        0.333333333   0.333333333   0.420112153
-S        0.333333333   0.333333333   0.579887847
+C        0.000000000   0.000000000   0.000000000
+C        0.250000000   0.250000000   0.250000000
 
 K_POINTS automatic
-  10 10 1   0  0  0
+  8  8  8   0  0  0
