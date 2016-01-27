@@ -2,11 +2,14 @@
 
 ## What is benchmark?
 
+test
+
 ## Benchmark strategies
 
 ## Strength criteria
 
 * Energies differences: 10 meV/atom
+
 * Residual forces: 10 meV/angstrom
 
 ## Examples
