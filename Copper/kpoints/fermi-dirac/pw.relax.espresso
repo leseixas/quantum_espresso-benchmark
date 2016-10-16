@@ -20,7 +20,7 @@
                          nspin    =    1
                    occupations    =    'smearing'
                       smearing    =    'fermi-dirac'
-                       degauss    =    VAR_TEMP
+                       degauss    =    VAR_T
 /
 
 &ELECTRONS

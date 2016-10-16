@@ -1,6 +1,6 @@
 #!/bin/bash
 
-for wfc in $(seq 525 25 750)
+for wfc in $(seq 50 25 750)
   do
   mkdir wfc_$wfc
   cd wfc_$wfc

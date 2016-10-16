@@ -6,7 +6,7 @@ for rho in $(seq 4 2 12)
   for wfc in $(seq 20 5 150)
   do
     cd wfc_$wfc
-    mpiexec pw.x -npool 2 -inp pw.relax.espresso > pw.relax.out
+    pw.x -inp pw.relax.espresso > pw.relax.out
     rm -rf pwscf.save
     cd ..
   done

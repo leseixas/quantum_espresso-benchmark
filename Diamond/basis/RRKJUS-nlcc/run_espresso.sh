@@ -3,6 +3,6 @@
 for wfc in $(seq 20 5 150)
   do
   cd wfc_$wfc
-  mpiexec pw.x -npool 2 -inp pw.relax.espresso > pw.relax.out
+  pw.x -inp pw.relax.espresso > pw.relax.out
   cd ..
 done
